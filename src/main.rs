@@ -2,6 +2,7 @@ use std::usize;
 
 use leptos::prelude::*;
 mod quotes;
+use js_sys::Math;
 
 #[component]
 fn App() -> impl IntoView {
@@ -23,9 +24,8 @@ fn App() -> impl IntoView {
     view! {
             <div class="ContentDiv">
             <button class="generateQuoteButton" on:click=move |_|{
-                set_quite_num.update(|n|{
-                *n = (*n +1) % total_quotes;
-                });
+                let new_quote_index = random_index(total_quotes,quote_num.get());
+            set_quite_num.set(new_quote_index);
             }>
         generate random quote
             </button>
@@ -43,4 +43,13 @@ fn App() -> impl IntoView {
 fn main() {
     console_error_panic_hook::set_once();
     leptos::mount::mount_to_body(App)
+}
+fn random_index(max: usize, old_me_haha: usize) -> usize {
+    loop {
+        let random = Math::random();
+        let n = (random * max as f64).floor() as usize;
+        if n != old_me_haha {
+            return n;
+        }
+    }
 }
