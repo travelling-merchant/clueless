@@ -1,9 +1,10 @@
 pub mod quotes {
+    #[derive(PartialEq, Clone)]
     pub struct Entry {
         pub text: String,
         pub author: String,
-        theme: String,
-        probability: u8,
+        pub theme: String,
+        pub probability: u8,
     }
     pub fn get_quotes() -> Vec<Entry> {
         let mut m: Vec<Entry> = Vec::new();
