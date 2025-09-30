@@ -5,12 +5,20 @@ body {
 
 
 }
+.ContentDiv{
 
-.QuoteDiv {
 	width: 50%;
 	height: 30%;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 	margin-top: 200px;
+}
+
+.generateQuoteButton{
+	margin-bottom:20px;
+	padding:3px 5px;
+	font-size:clamp(2rem,4vw,30px);
+	color:var(--button-font-color);
+	background-color:var(--button-color);
 }

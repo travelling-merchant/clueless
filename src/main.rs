@@ -1,8 +1,7 @@
 use std::usize;
 
-use leptos::{html::q, prelude::*};
+use leptos::prelude::*;
 mod quotes;
-use serde::Deserialize;
 
 #[component]
 fn App() -> impl IntoView {
@@ -22,23 +21,24 @@ fn App() -> impl IntoView {
             })
     });
     view! {
-        <div class="QuoteDiv">
-        <p>{ move || {
-            current_quote.get().text
-        }} </p>
-        <p>{ move || {
-            current_quote.get().author
-        }} </p>
-        </div>
-        <button on:click=move |_|{
-            set_quite_num.update(|n|{
-            *n = (*n +1) % total_quotes;
-            });
-        }>
-
-        </button>
-
-    }
+            <div class="ContentDiv">
+            <button class="generateQuoteButton" on:click=move |_|{
+                set_quite_num.update(|n|{
+                *n = (*n +1) % total_quotes;
+                });
+            }>
+        generate random quote
+            </button>
+            <div class="QuoteDiv">
+            <p>{ move || {
+                current_quote.get().text
+            }} </p>
+            <p>{ move || {
+                current_quote.get().author
+            }} </p>
+            </div>
+    </div>
+        }
 }
 fn main() {
     console_error_panic_hook::set_once();
