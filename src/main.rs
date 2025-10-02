@@ -21,6 +21,16 @@ fn App() -> impl IntoView {
                 probability: 0,
             })
     });
+
+    let copy_to_clipboard = {
+        move |_| {
+            if let Some(navigator) =
+                web_sys::window().and_then(|win| Some(win.navigator().clipboard()))
+            {
+                let _ = navigator.write_text(&current_quote.get().text);
+            }
+        }
+    };
     view! {
             <div class="ContentDiv">
             <button class="generateQuoteButton" on:click=move |_|{
@@ -28,6 +38,9 @@ fn App() -> impl IntoView {
             set_quite_num.set(new_quote_index);
             }>
         generate random quote
+            </button>
+            <button class="generateQuoteButton" on:click=copy_to_clipboard>
+                Copy to clipboard
             </button>
             <div class="QuoteDiv">
             <p>{ move || {

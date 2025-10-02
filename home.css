@@ -14,10 +14,11 @@ body {
 	margin-left: auto;
 	margin-top: 200px;
 }
-
+/* also used for copy ,cause lazy*/
 .generateQuoteButton{
 	margin-bottom:20px;
 	padding:3px 5px;
+	margin-right:5%;
 	font-size:clamp(2rem,4vw,30px);
 	color:var(--button-font-color);
 	background-color:var(--button-color);

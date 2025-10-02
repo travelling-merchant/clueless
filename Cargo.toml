@@ -9,3 +9,8 @@ js-sys = "0.3.81"
 leptos = { version = "0.8.2", features = ["csr"] }
 serde = { version = "1.0.219", features = ["derive"] }
 toml = "0.8.23"
+web-sys = { version = "0.3.81", features = [
+	"Clipboard",
+	"Window",
+	"Navigator",
+] }
