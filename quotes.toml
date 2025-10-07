@@ -27,3 +27,111 @@ text = "It is practically impossible to teach good programming to students that 
 author = "Edsger W. Dijkstra"
 theme = "Cyberspace"
 probability = 5
+
+[[quote]]
+text = "The question of whether a computer can think is no more interesting than the question of whether a submarine can swim."
+author = "Edsger W. Dijkstra"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "Simplicity is prerequisite for reliability."
+author = "Edsger W. Dijkstra"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "The purpose of abstracting is not to be vague, but to create a new semantic level in which one can be absolutely precise."
+author = "Edsger W. Dijkstra"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "Your obligation is that of active participation. You should not act as knowledge-absorbing sponges, but as whetstones on which we can all sharpen our wits"
+author = "Edsger W. Dijkstra"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "The computing scientist’s main challenge is not to get confused by the complexities of his own making."
+author = "Edsger W. Dijkstra"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "Testing can only prove the presence of bugs, not their absence. –"
+author = "Edsger W. Dijkstra"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "I have no special talent. I am only passionately curious."
+author = "Albert Einstein"
+theme = "Education"
+probability = 4
+
+[[quote]]
+text = "Common sense is the collection of prejudices acquired by age eighteen."
+author = "Albert Einstein"
+theme = "Education"
+probability = 4
+
+[[quote]]
+text = "The important thing is not to stop questioning. Curiosity has its own reason for existing."
+author = "Albert Einstein"
+theme = "Education"
+probability = 3
+
+[[quote]]
+text = "Nationalism is an infantile disease. It is the measles of mankind."
+author = "Albert Einstein"
+theme = "Education"
+probability = 4
+
+[[quote]]
+text = "If you can't explain it simply, you don't understand it well enough."
+author = "Albert Einstein"
+theme = "Education"
+probability = 5
+
+[[quote]]
+text = "Wir müssen wissen, wir werden wissen!"
+author = "David Hilbert"
+theme = "Education"
+probability = 5
+
+[[quote]]
+text = "An idiot admires complexity, a genius admires simplicity"
+author = "Terry Davis"
+theme = "Cyberspace"
+probability = 3
+
+[[quote]]
+text = "The most dangerous phrase in the language is, ‘We've always done it this way.’"
+author = "Grace Hopper"
+theme = "Cyberspace"
+probability = 3
+
+[[quote]]
+text = "A ship in port is safe, but that's not what ships are built for. Sail out to sea and do new things."
+author = "Grace Hopper"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "If it's a good idea, go ahead and do it. It is much easier to apologize than it is to get permission."
+author = "Grace Hopper"
+theme = "Cyberspace"
+probability = 4
+
+[[quote]]
+text = "The difficulty lies, not in the new ideas, but in escaping from the old ones."
+author = "Grace Hopper"
+theme = "Cyberspace"
+probability = 5
+
+[[quote]]
+text = "Democracy for an insignificant minority, democracy for the rich — that is the democracy of capitalist society."
+author = "Wladimir Iljitsch Lenin"
+theme = "Politics"
+probability = 5
